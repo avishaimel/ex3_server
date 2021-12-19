@@ -22,6 +22,7 @@ while i < len(str_recieved):
     if request_end not in str_recieved:
         str_recieved += s.recv(recv_length)
 
+
     if str_recieved[i:i + 3] == 'GET':
         j = i+4
         while str_recieved[j] != ' ':
